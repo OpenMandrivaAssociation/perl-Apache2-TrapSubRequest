@@ -12,6 +12,7 @@ BuildRequires:	perl-devel
 BuildRequires:	apache-mod_perl
 BuildRequires:	perl(Apache::Test) >= 1.25
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Apache2::TrapSubRequest - Trap a lookup_file/lookup_uri into a
