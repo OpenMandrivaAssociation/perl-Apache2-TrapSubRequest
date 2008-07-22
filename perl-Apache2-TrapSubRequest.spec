@@ -3,7 +3,7 @@
 Summary:	Apache2::TrapSubRequest - Trap a lookup_file/lookup_uri into a scalar
 Name:		perl-%{real_name}
 Version:	0.03
-Release: %mkrel 3
+Release: %mkrel 5
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
