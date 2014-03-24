@@ -26,7 +26,10 @@ scalar.
 %build
 perl Makefile.PL INSTALLDIRS=vendor
 %make
-make test
+
+# The tests will fail to run inside ABF chroot
+# %check
+# make test
 
 %install
 %makeinstall_std
@@ -35,36 +38,3 @@ make test
 %doc Changes README
 %{perl_vendorlib}/Apache2/TrapSubRequest.pm
 %{_mandir}/*/*
-
-
-%changelog
-* Sat May 28 2011 Funda Wang <fwang@mandriva.org> 0.30.0-2mdv2011.0
-+ Revision: 680467
-- mass rebuild
-
-* Wed Jul 29 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.30.0-1mdv2011.0
-+ Revision: 402974
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.03-5mdv2009.0
-+ Revision: 241146
-- rebuild
-- kill re-definition of %%buildroot on Pixel's request
-
-  + Olivier Blin <oblin@mandriva.com>
-    - restore BuildRoot
-
-* Wed May 09 2007 Oden Eriksson <oeriksson@mandriva.com> 0.03-3mdv2008.0
-+ Revision: 25446
-- rebuild
-
-
-* Thu Apr 27 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.03-2mdk
-- Fix SPEC according to Perl Policy
-	- BuildRequires
-	- Source URL
-- use mkrel
-
-* Fri Jul 15 2005 Oden Eriksson <oeriksson@mandriva.com> 0.03-1mdk
-- initial Mandriva package
-
