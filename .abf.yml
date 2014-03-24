@@ -1,2 +1,4 @@
+removed_sources:
+  Apache2-TrapSubRequest-0.03.tar.bz2: c878e8b6123805be77b9c73c8d30a9c4c4f703a0
 sources:
-  "Apache2-TrapSubRequest-0.03.tar.bz2": c878e8b6123805be77b9c73c8d30a9c4c4f703a0
+  Apache2-TrapSubRequest-0.04.tar.gz: c563f386a39bbd4d343f7a44de00a22aa154d263

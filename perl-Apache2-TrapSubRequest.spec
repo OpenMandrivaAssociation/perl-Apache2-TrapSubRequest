@@ -1,15 +1,15 @@
 %define upstream_name    Apache2-TrapSubRequest
-%define upstream_version 0.03
+%define upstream_version 0.04
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Apache2::TrapSubRequest - Trap a lookup_file/lookup_uri into a scalar
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Apache2/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Apache2/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	apache-mod_perl
 BuildRequires:	perl(Apache::Test) >= 1.25
@@ -38,3 +38,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes README
 %{perl_vendorlib}/Apache2/TrapSubRequest.pm
 %{_mandir}/*/*
+
