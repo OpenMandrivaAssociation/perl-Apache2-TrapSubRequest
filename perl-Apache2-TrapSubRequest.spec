@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 
 Summary:	Apache2::TrapSubRequest - Trap a lookup_file/lookup_uri into a scalar
 License:	GPL+ or Artistic
