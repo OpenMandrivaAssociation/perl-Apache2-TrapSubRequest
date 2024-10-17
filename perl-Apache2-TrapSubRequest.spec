@@ -8,7 +8,7 @@ Release:	3
 Summary:	Apache2::TrapSubRequest - Trap a lookup_file/lookup_uri into a scalar
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Apache2/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	apache-mod_perl
