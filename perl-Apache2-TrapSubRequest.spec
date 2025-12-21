@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Apache2/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	apache-mod_perl
 BuildRequires:	perl(Apache::Test) >= 1.25
 BuildRequires:	perl-devel
